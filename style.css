@@ -17,8 +17,8 @@ body {
 main {
   color: hsl(193, 38%, 86%);
   background-color: hsl(217, 19%, 24%);
-  padding: 2rem 2rem 0 2rem;
-  width: clamp(25rem, calc(100% - 20px), 27.5rem);
+  padding: 3rem 3rem 0 3rem;
+  width: clamp(30rem, calc(100% - 20px), 32rem);
   border-radius: 0.5rem;
   text-align: center;
   display: flex;
@@ -70,5 +70,6 @@ img {
 @media (max-width: 524px) {
   main {
     width: 100%;
+    padding: 2rem 1rem 0 1rem;
   }
 }
