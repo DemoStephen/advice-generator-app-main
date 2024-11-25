@@ -13,6 +13,10 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  background-image: url("/images/bg-intro-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: color-dodge;
 }
 main {
   color: hsl(193, 38%, 86%);
@@ -59,6 +63,27 @@ button img {
 img {
   width: 100%;
 }
+.attribution {
+  position: fixed;
+  font-size: x-small;
+  text-transform: uppercase;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  text-align: center;
+  bottom: 2rem;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  animation: attribution 0.85s infinite alternate-reverse;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
 @keyframes dice {
   from {
     transform: rotate(0deg);
@@ -67,7 +92,18 @@ img {
     transform: rotate(360deg);
   }
 }
+@keyframes attribution {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
 @media (max-width: 524px) {
+  body {
+    background-image: url("/images/bg-intro-mobile.png");
+  }
   main {
     width: 100%;
     padding: 2rem 1rem 0 1rem;

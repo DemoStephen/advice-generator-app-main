@@ -102,14 +102,22 @@ const QUOTES = [
   { id: 98, advice: "Keep a growth mindset in everything you do." },
   { id: 99, advice: "Take time to appreciate the present." },
   { id: 100, advice: "Always keep striving to improve." },
+  {
+    id: 101,
+    advice: "A journey of a thousand miles starts with transport money.",
+  },
 ];
 
 const id = document.querySelector("[data-id]");
 const quote = document.querySelector("[data-quote]");
 const button = document.querySelector("[data-button]");
+let index = (QUOTES.length * Math.random()).toFixed(0);
+
+id.innerText = QUOTES[index].id;
+quote.innerText = QUOTES[index].advice;
 button.addEventListener("click", (e) => {
   e.preventDefault();
-  let index = (Math.random() * QUOTES.length * Math.random()).toFixed(0);
+  let index = (QUOTES.length * Math.random() * Math.random()).toFixed(0);
 
   id.innerText = QUOTES[index].id;
   quote.innerText = QUOTES[index].advice;
