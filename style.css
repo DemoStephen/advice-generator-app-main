@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+main {
+  color: hsl(193, 38%, 86%);
+  background-color: hsl(217, 19%, 24%);
+  padding: 2rem 2rem 0 2rem;
+  width: clamp(25rem, calc(100% - 20px), 27.5rem);
+  border-radius: 0.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+header {
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  font-size: small;
+}
+p {
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+button {
+  background-color: hsl(150, 100%, 66%);
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 1rem;
+  border-radius: 99px;
+  border: none;
+  outline: none;
+  margin-bottom: -1.75rem;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px hsl(150, 100%, 66%);
+  animation: dice 2s infinite alternate-reverse;
+}
+button img {
+  height: 100%;
+}
+img {
+  width: 100%;
+}
+@keyframes dice {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 524px) {
+  main {
+    width: 100%;
+  }
+}
