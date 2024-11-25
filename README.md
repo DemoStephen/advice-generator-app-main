@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [codewithstephen.com/solution/advice-generator-app](https://your-solution-url.com)
-- Live Site URL: [codewithstephen.com/live/advice-generator-app](https://your-live-site-url.com)
+- Solution URL: [codewithstephen.com/solution/advice-generator-app](https://github.com/DemoStephen/advice-generator-app-main)
+- Live Site URL: [codewithstephen.com/live/advice-generator-app](https://advice-generator-app-three-ivory.vercel.app/)
 
 ## My process
 
