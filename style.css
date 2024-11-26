@@ -35,7 +35,6 @@ header {
   color: hsl(150, 100%, 66%);
   text-transform: uppercase;
   letter-spacing: 2px;
-  word-spacing: 10px;
   font-size: small;
 }
 p {
