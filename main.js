@@ -233,15 +233,347 @@ const QUOTES = [
   { id: 201, ot: "Make your presence matter even when you no dey around." },
   { id: 202, ot: "Street OT: Grind dey necessary, but balance na key." },
 ];
-
+const broke = [
+  { id: 1, joke: "I’m so broke, I can't even pay attention." },
+  { id: 2, joke: "I don't need a wallet; my pockets are already empty." },
+  {
+    id: 3,
+    joke: "My bank account is like a horror movie: a lot of screaming and nothing to look at.",
+  },
+  {
+    id: 4,
+    joke: "I’m not saying I’m poor, but my idea of a meal is ‘Do you want fries with that?’",
+  },
+  {
+    id: 5,
+    joke: "I’m living paycheck to paycheck, but I’m too broke to even check my paycheck.",
+  },
+  {
+    id: 6,
+    joke: "I don’t have a dollar to my name, but at least my ego’s rich.",
+  },
+  {
+    id: 7,
+    joke: "My financial advisor told me I have an amazing budget… it’s called ‘no budget.’",
+  },
+  {
+    id: 8,
+    joke: "I’m so broke, my credit card declined my request for a nap.",
+  },
+  {
+    id: 9,
+    joke: "Being broke is a lifestyle choice. Unfortunately, it's not a very fun one.",
+  },
+  {
+    id: 10,
+    joke: "My money’s like my friends—hard to find and even harder to keep.",
+  },
+  {
+    id: 11,
+    joke: "I tried to pay for something with my smile, but apparently that doesn’t work at the bank.",
+  },
+  {
+    id: 12,
+    joke: "I’m so broke, my change jar is just a sad little paperclip.",
+  },
+  {
+    id: 13,
+    joke: "I wanted to go on a diet, but my wallet says it’s already starving.",
+  },
+  { id: 14, joke: "I’m not poor, I’m just financially challenged." },
+  {
+    id: 15,
+    joke: "I’m so broke, I can’t even afford the ‘free’ samples at the grocery store.",
+  },
+  {
+    id: 16,
+    joke: "I’m not poor, I’m just in an exclusive financial club… and the membership fee is impossible to pay.",
+  },
+  {
+    id: 17,
+    joke: "I’m so broke, I can’t even afford to make a phone call for help.",
+  },
+  { id: 18, joke: "My wallet’s so empty, it echoes when I open it." },
+  {
+    id: 19,
+    joke: "I wanted to buy a vacation, but my bank account only offers staycations.",
+  },
+  {
+    id: 20,
+    joke: "I’m so broke, my idea of a shopping spree is walking through the clearance aisle.",
+  },
+  {
+    id: 21,
+    joke: "My bank account and I have one thing in common: we both need some serious help.",
+  },
+  {
+    id: 22,
+    joke: "I’m so broke, I thought about selling my soul, but the market’s flooded.",
+  },
+  {
+    id: 23,
+    joke: "I don’t know what’s worse: my credit score or my dating life.",
+  },
+  {
+    id: 24,
+    joke: "I’m so broke, my financial plan involves hoping for a miracle.",
+  },
+  { id: 25, joke: "I’m not broke, I’m just living on ‘creative funding.’" },
+  {
+    id: 26,
+    joke: "I don’t have a credit card, but I do have a ‘Sorry, I’m Out of Funds’ card.",
+  },
+  {
+    id: 27,
+    joke: "I’m so broke, even my imaginary friend’s charging me rent.",
+  },
+  {
+    id: 28,
+    joke: "My life is like a reality show: I’m constantly living on a budget.",
+  },
+  {
+    id: 29,
+    joke: "I’m so broke, I can’t even afford to fake it 'til I make it.",
+  },
+  {
+    id: 30,
+    joke: "I’m living proof that the more you spend, the less you have.",
+  },
+  { id: 31, joke: "I’m not poor, I’m just ‘wealth-challenged.’" },
+  {
+    id: 32,
+    joke: "I’m so broke, I’m considering starting a GoFundMe for my next meal.",
+  },
+  { id: 33, joke: "My wallet’s on a permanent vacation." },
+  { id: 34, joke: "I’m so broke, even my pockets have empty promises." },
+  {
+    id: 35,
+    joke: "I’m so broke, I’m not even in the red—I’m in the gray.",
+  },
+  {
+    id: 36,
+    joke: "I tried to buy something on sale, but my credit card just laughed at me.",
+  },
+  {
+    id: 37,
+    joke: "I’m not living paycheck to paycheck, I’m living ‘Wait a second, did I just get paid?’ to ‘Where did it go?’",
+  },
+  {
+    id: 38,
+    joke: "I’m so broke, I can’t even afford to say ‘goodbye’—it’s a ‘good luck’ instead.",
+  },
+  { id: 39, joke: "I’m so broke, I’m trying to sell my dreams on eBay." },
+  {
+    id: 40,
+    joke: "My wallet is like a phone with no battery—it’s totally useless.",
+  },
+  {
+    id: 41,
+    joke: "I’m so broke, I can’t afford a subscription to Netflix's 'Free Trial'.",
+  },
+  {
+    id: 42,
+    joke: "I’m not broke; I’m just doing a really intense savings challenge.",
+  },
+  { id: 43, joke: "My bank account balance is a unicorn—nonexistent." },
+  {
+    id: 44,
+    joke: "I’m so broke, I thought about selling my last pair of socks, but they don’t even have enough value to be worth it.",
+  },
+  {
+    id: 45,
+    joke: "I’m not poor; I’m just experiencing an extended vacation from wealth.",
+  },
+  {
+    id: 46,
+    joke: "I’m so broke, I think my bank account is allergic to deposits.",
+  },
+  {
+    id: 47,
+    joke: "My money is like a ghost: it disappears without a trace.",
+  },
+  {
+    id: 48,
+    joke: "I’m so broke, my plans for the future involve a lot of wishful thinking.",
+  },
+  {
+    id: 49,
+    joke: "I’m not poor, I’m just on a budget that’s stuck in a perpetual state of ‘almost there.’",
+  },
+  {
+    id: 50,
+    joke: "I’m so broke, my PayPal account sends me ‘Are you sure you want to do this?’",
+  },
+  { id: 51, joke: "My financial advice? Don’t follow me. I’m lost too." },
+  {
+    id: 52,
+    joke: "I’m so broke, I’m trying to negotiate with my rent like it’s a yard sale.",
+  },
+  {
+    id: 53,
+    joke: "I’m not poor; I’m just living in a ‘tight budget’ mansion.",
+  },
+  { id: 54, joke: "I’m so broke, even my thoughts are on layaway." },
+  {
+    id: 55,
+    joke: "I don’t have money for a date, but I do have enough for a walk in the park… if it’s free.",
+  },
+  {
+    id: 56,
+    joke: "I’m so broke, I only carry around enough change to buy a fortune cookie, but not the fortune.",
+  },
+  {
+    id: 57,
+    joke: "I’m so broke, my credit card’s only job is to collect dust.",
+  },
+  { id: 58, joke: "I’m not broke, I’m just financially adventurous." },
+  {
+    id: 59,
+    joke: "I’m so broke, I’m using my last dollar to write this joke.",
+  },
+  { id: 60, joke: "I’m so broke, I can’t even pay my respects." },
+  {
+    id: 61,
+    joke: "I’m so broke, I thought I heard coins rattling in my pocket, but it was just the sound of my hopes and dreams falling apart.",
+  },
+  {
+    id: 62,
+    joke: "I’m not poor, I’m just temporarily without money while I wait for my next big break.",
+  },
+  {
+    id: 63,
+    joke: "I’m so broke, I have to borrow a dollar just to say ‘goodbye.’",
+  },
+  { id: 64, joke: "I’m so broke, I had to cancel my plans to be rich." },
+  { id: 65, joke: "I’m not poor; I’m just experiencing a wealth drought." },
+  {
+    id: 66,
+    joke: "I’m so broke, I’m trying to make a meal out of a prayer and some hope.",
+  },
+  {
+    id: 67,
+    joke: "I’m so broke, my financial status has its own theme song: ‘The Struggle Is Real.’",
+  },
+  {
+    id: 68,
+    joke: "I’m not broke, I’m just having a long-term savings plan… that’s yet to begin.",
+  },
+  { id: 69, joke: "I’m so broke, I can’t even afford a cup of ambition." },
+  {
+    id: 70,
+    joke: "I’m so broke, my bank account sends me ‘Are you sure you want to keep going?’",
+  },
+  {
+    id: 71,
+    joke: "I’m so broke, I’m considering taking a second job as a fortune teller—because I sure can’t predict my financial future.",
+  },
+  {
+    id: 72,
+    joke: "I’m so broke, my most valuable asset is a can of beans.",
+  },
+  {
+    id: 73,
+    joke: "I’m not poor; I’m just living like I’m in an episode of ‘Survivor: Budget Edition.’",
+  },
+  {
+    id: 74,
+    joke: "I’m so broke, I need a GoFundMe just to afford a cup of coffee.",
+  },
+  {
+    id: 75,
+    joke: "I’m so broke, even my plans for the weekend are on layaway.",
+  },
+  { id: 76, joke: "My credit card is maxed out and my spirits are too." },
+  {
+    id: 77,
+    joke: "I’m so broke, I think about investing in stocks, but the only stock I have is my own hope.",
+  },
+  { id: 78, joke: "I’m so broke, even my thoughts are on sale." },
+  {
+    id: 79,
+    joke: "I’m so broke, I couldn’t even afford to buy this joke a punchline.",
+  },
+  {
+    id: 80,
+    joke: "I’m so broke, I’m waiting for my bank to start charging me rent for existing.",
+  },
+  {
+    id: 81,
+    joke: "I’m so broke, I can’t even make cents out of my situation.",
+  },
+  {
+    id: 82,
+    joke: "I’m so broke, I’m not sure if I’m still working or if I’m just surviving.",
+  },
+  { id: 83, joke: "I’m so broke, even my budget needs a budget." },
+  {
+    id: 84,
+    joke: "I’m so broke, my credit card is collecting dust like it’s its full-time job.",
+  },
+  {
+    id: 85,
+    joke: "I’m so broke, I can’t afford to be shocked by my bank account anymore.",
+  },
+  {
+    id: 86,
+    joke: "I’m so broke, I’m starting to consider a second job in my dreams.",
+  },
+  {
+    id: 87,
+    joke: "I’m so broke, I’ll need a miracle to afford the miracle.",
+  },
+  {
+    id: 88,
+    joke: "I’m so broke, I’m considering selling my thoughts for spare change.",
+  },
+  {
+    id: 89,
+    joke: "I’m so broke, I’m thinking of putting my thoughts on eBay just to make a little cash.",
+  },
+  {
+    id: 90,
+    joke: "I’m so broke, I’ve started to refer to my change jar as my ‘retirement fund.’",
+  },
+  {
+    id: 91,
+    joke: "I’m so broke, I can’t even buy my way into a better attitude.",
+  },
+  {
+    id: 92,
+    joke: "I’m so broke, I’m making my own savings account out of wishful thinking.",
+  },
+  {
+    id: 93,
+    joke: "I’m so broke, I just realized I’ve been giving ‘credit’ to my dreams.",
+  },
+  {
+    id: 94,
+    joke: "I’m so broke, even my piggy bank is filing for bankruptcy.",
+  },
+  { id: 95, joke: "I’m so broke, I have to borrow money from myself." },
+  {
+    id: 96,
+    joke: "I’m so broke, I’m considering asking my credit card company for a loan.",
+  },
+  { id: 97, joke: "I’m so broke, I’m using my imagination to pay bills." },
+  {
+    id: 98,
+    joke: "I’m so broke, my financial future has been delayed indefinitely.",
+  },
+  { id: 99, joke: "I’m so broke, even my promises are in debt." },
+  {
+    id: 100,
+    joke: "I’m so broke, even my positive thinking has gone into foreclosure.",
+  },
+];
 const quote = document.querySelector("[data-quote]");
 const button = document.querySelector("[data-button]");
 let index = (QUOTES.length * Math.random() * Math.random()).toFixed(0);
-
-quote.innerText = QUOTES[index].ot;
+let brokeIndex = (broke.length * Math.random() * Math.random()).toFixed(0);
+quote.innerText = broke[brokeIndex].joke;
 button.addEventListener("click", (e) => {
   e.preventDefault();
-  let index = (QUOTES.length * Math.random() * Math.random()).toFixed(0);
-
-  quote.innerText = QUOTES[index].ot;
+  index = (QUOTES.length * Math.random() * Math.random()).toFixed(0);
+  brokeIndex = (broke.length * Math.random() * Math.random()).toFixed(0);
+  quote.innerText = broke[brokeIndex].joke;
 });
